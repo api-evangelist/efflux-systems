@@ -1,7 +1,19 @@
 aid: efflux-systems
 name: Efflux Systems
-description: Efflux Systems is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Efflux (Efflux Systems, Inc.) is a Baltimore, Maryland cybersecurity company
+  founded in 2014 that operates a near real-time asset intelligence and
+  attack-surface platform. Efflux delivers fresh intelligence about the assets
+  of organizations, networks, and services — offered as a one-time Asset Map,
+  scheduled monitoring, or on-demand custom scanning. Its differentiator is
+  radical transparency: rather than opaque risk scores and surface-level
+  abstractions, Efflux records and exposes every scan it runs, every asset it
+  discovers, and every attribution it makes, so teams can see what was found,
+  how it was discovered, and why it matters — raw information and formatted
+  insights side by side. Data is accessible via export, download, share, and a
+  programmatic API. The company is backed by 500 Global, Granite Hill Capital
+  Partners, TEDCO, and Three Tree Ventures, and is currently in early access
+  with a public waitlist.
 url: https://raw.githubusercontent.com/api-evangelist/efflux-systems/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +21,60 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://effluxsystems.com/favicon.ico
 tags:
 - Company
-apis: []
+- Security
+- Cybersecurity
+- Attack Surface Management
+- Asset Intelligence
+- Asset Discovery
+- Threat Intelligence
+- Vulnerability Management
+apis:
+- name: Efflux API
+  description: >-
+    Programmatic access to Efflux asset-intelligence data — export, download,
+    and share the assets, scans, and attributions Efflux collects. The API host
+    is live but access-gated (early access / waitlist); no public OpenAPI or API
+    reference is published yet.
+  humanURL: https://efflux.io
+  baseURL: https://api.efflux.io
+  properties: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/efflux-systems-domain-security.yml
 - type: Website
   url: https://effluxsystems.com
+- type: SignUp
+  url: https://efflux.io/waitlist
+- type: PrivacyPolicy
+  url: https://efflux.io/privacy
+- type: Support
+  url: https://efflux.io/contact
+- type: LLMsTxt
+  url: llms/efflux-systems-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

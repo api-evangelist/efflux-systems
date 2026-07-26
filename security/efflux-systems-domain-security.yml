@@ -1,0 +1,15 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: effluxsystems.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 29 08:29:27 2026 GMT
+  hsts: null
+domains:
+- domain: effluxsystems.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
